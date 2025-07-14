@@ -12,13 +12,13 @@ pipeline {
         stage('Compaile') {
             steps {
                 echo 'Code Compile'
-                bat 'javac Helloword.java'
+                bat 'javac HelloWorld.java'
             }
         }
         stage('Run') {
             steps {
                 echo 'Code Run'
-                bat 'java Helloword'
+                bat 'java HelloWorld'
             }
         }
     }
